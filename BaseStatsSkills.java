@@ -36,6 +36,16 @@ public class BaseStatsSkills {
         setCharisma(charis);
         setProficiency(prof);
     }
+
+    public BaseStatsSkills() {
+        setStrength(15);
+        setDexterity(14);
+        setConstitution(13);
+        setIntelligence(12);
+        setWisdom(10);
+        setCharisma(8);
+        setProficiency(2);
+    }
     
     public static void main(String[] args) {
         //System.out.printf("I have run without error");
@@ -283,14 +293,16 @@ public class BaseStatsSkills {
         int roll2 = 1 + (int)(Math.random() * ((20 - 1) + 1));
         
         if(roll1 == 1) {
-            nat1_1 = "YOU ROLLED A NAT 1\n";
+            System.out.println("YOU ROLLED A NAT 1\n");
+            return 1;
         }
         if(roll1 == 20) {
             nat20_1 = "YOU ROLLED A NAT 20\n";
         }
         
         if(roll2 == 1) {
-            nat1_2 = "YOU ROLLED A NAT 1\n";
+            System.out.println("YOU ROLLED A NAT 1\n");
+            return 1;
         }
         if(roll2 == 20) {
             nat20_2 = "YOU ROLLED A NAT 20\n";
