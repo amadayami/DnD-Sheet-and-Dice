@@ -13,7 +13,7 @@ public class CharacterInfo {
     
     int cp, sp, ep, gp, pp;
     
-    String languages, personality, ideals, bonds, flaws;
+    String languages, tools, personality, ideals, bonds, flaws;
 
     public CharacterInfo(String name, String classT, String background,
                          String race, String alignment, String playerName,
