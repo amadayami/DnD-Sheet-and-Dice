@@ -17,7 +17,8 @@ public class CharacterInfo {
 
     public CharacterInfo(String name, String classT, String background,
                          String race, String alignment, String playerName,
-                         int speed, int hpMax){
+                         int speed, int hpMax, int armorClass, int hpCur,
+                         int hpTemp, int sp, int pp, int ep, int gp, int cp){
         setCharName(name);
         setCharClass(classT);
         setBackground(background);
@@ -26,6 +27,14 @@ public class CharacterInfo {
         setPlayerName(playerName);
         setSpeed(speed);
         setHpMax(hpMax);
+        setArmorClass(armorClass);
+        setHpCur(hpCur);
+        setHpTemp(hpTemp);
+        setSp(sp);
+        setPp(pp);
+        setEp(ep);
+        setGp(gp);
+        setCp(cp);
     }
 
     public CharacterInfo(){
@@ -37,6 +46,14 @@ public class CharacterInfo {
         setPlayerName("Amelia Martin");
         setSpeed(30);
         setHpMax(10);
+        setArmorClass(0);
+        setHpCur(10);
+        setHpTemp(0);
+        setSp(0);
+        setPp(0);
+        setEp(0);
+        setGp(0);
+        setCp(0);
     }
 
     /*
