@@ -17,27 +17,25 @@ public class Character {
         // TODO Auto-generated method stub
     }
 
-    private boolean saveCharacterToFile(){
-        LinkedList<Object> cis = new LinkedList<>();
-        cis.add(0, curCharInfo.getCharName());
-        cis.add(1, curCharInfo.getBackground());
-        cis.add(2, curCharInfo.getRace());
-        cis.add(3, curCharInfo.getAlignment());
-        cis.add(4, curCharInfo.getPlayerName());
-        cis.add(5, curCharInfo.getSpeed());
-        cis.add(6, curCharInfo.getHpMax());
-        cis.add(7, curCharInfo.getArmorClass());
-        cis.add(8, curCharInfo.getHpCur());
-        cis.add(9, curCharInfo.getHpTemp());
-        cis.add(10, curCharInfo.getSp());
-        cis.add(11, curCharInfo.getPp());
-        cis.add(12, curCharInfo.getEp());
-        cis.add(13, curCharInfo.getGp());
-        cis.add(14, curCharInfo.getEp());
-
-
+    private boolean mapCharacterToFile(){
+        HashMap<String, Object> cis = new HashMap<String, Object>();
+        cis.put("name", curCharInfo.getCharName());
+        cis.put("class", curCharInfo.getCharClass());
+        cis.put("background", curCharInfo.getBackground());
+        cis.put("race", curCharInfo.getBackground());
+        cis.put("alignment", curCharInfo.getAlignment());
+        cis.put("playerName", curCharInfo.getPlayerName());
+        cis.put("speed", curCharInfo.getSpeed());
+        cis.put("maxHP", curCharInfo.getHpMax());
+        cis.put("armorClass", curCharInfo.getArmorClass());
+        cis.put("curHP", curCharInfo.getHpCur());
+        cis.put("tempHP", curCharInfo.getHpTemp());
+        cis.put("sp", curCharInfo.getSp());
+        cis.put("pp", curCharInfo.getPp());
+        cis.put("ep", curCharInfo.getEp());
+        cis.put("gp", curCharInfo.getGp());
+        cis.put("cp", curCharInfo.getCp());
         return true;
     }
-
 
 }

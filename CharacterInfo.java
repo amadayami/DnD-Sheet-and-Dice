@@ -1,4 +1,4 @@
-
+import java.util.*;
 public class CharacterInfo {
     String charName;
     String charClass;
@@ -13,12 +13,15 @@ public class CharacterInfo {
     
     int cp, sp, ep, gp, pp;
     
-    String languages, tools, personality, ideals, bonds, flaws;
+    ArrayList<String> languages;
+    ArrayList<String> toolProfs;
+    String personality, ideals, bonds, flaws;
 
     public CharacterInfo(String name, String classT, String background,
                          String race, String alignment, String playerName,
                          int speed, int hpMax, int armorClass, int hpCur,
-                         int hpTemp, int sp, int pp, int ep, int gp, int cp){
+                         int hpTemp, int sp, int pp, int ep, int gp, int cp
+    ){
         setCharName(name);
         setCharClass(classT);
         setBackground(background);
@@ -54,6 +57,7 @@ public class CharacterInfo {
         setEp(0);
         setGp(0);
         setCp(0);
+
     }
 
     /*
