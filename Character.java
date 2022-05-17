@@ -22,7 +22,7 @@ public class Character {
         cis.put("name", curCharInfo.getCharName());
         cis.put("class", curCharInfo.getCharClass());
         cis.put("background", curCharInfo.getBackground());
-        cis.put("race", curCharInfo.getBackground());
+        cis.put("race", curCharInfo.getRace());
         cis.put("alignment", curCharInfo.getAlignment());
         cis.put("playerName", curCharInfo.getPlayerName());
         cis.put("speed", curCharInfo.getSpeed());

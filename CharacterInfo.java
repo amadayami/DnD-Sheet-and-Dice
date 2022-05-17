@@ -20,7 +20,10 @@ public class CharacterInfo {
     public CharacterInfo(String name, String classT, String background,
                          String race, String alignment, String playerName,
                          int speed, int hpMax, int armorClass, int hpCur,
-                         int hpTemp, int sp, int pp, int ep, int gp, int cp
+                         int hpTemp, int sp, int pp, int ep, int gp, int cp,
+                         ArrayList<String> languages, ArrayList<String> toolProfs,
+                         String personality, String ideals, String bonds, String flaws
+
     ){
         setCharName(name);
         setCharClass(classT);
@@ -38,6 +41,12 @@ public class CharacterInfo {
         setEp(ep);
         setGp(gp);
         setCp(cp);
+        setLanguages(languages);
+        setToolProfs(toolProfs);
+        setPersonality(personality);
+        setIdeals(ideals);
+        setBonds(bonds);
+        setFlaws(flaws);
     }
 
     public CharacterInfo(){
@@ -57,7 +66,12 @@ public class CharacterInfo {
         setEp(0);
         setGp(0);
         setCp(0);
-
+        setLanguages(new ArrayList<String>());
+        setToolProfs(new ArrayList<String>());
+        setPersonality("");
+        setIdeals("");
+        setBonds("");
+        setFlaws("");
     }
 
     /*
@@ -107,6 +121,18 @@ public class CharacterInfo {
 
     public void setPp(int pp) { this.pp = pp; }
 
+    public void setLanguages(ArrayList<String> languages)  { this.languages = languages; }
+
+    public void setToolProfs(ArrayList<String> toolProfs) { this.toolProfs = toolProfs; }
+
+    public void setPersonality(String personality) { this.personality = personality; }
+
+    public void setIdeals(String ideals) { this.ideals = ideals; }
+
+    public void setBonds(String bonds) { this.bonds = bonds;}
+
+    public void setFlaws(String flaws) { this.flaws = flaws; }
+
     /*
     Getters for the character info variables
      */
@@ -141,4 +167,16 @@ public class CharacterInfo {
     public int getGp() { return this.gp; }
 
     public int getPp() { return this.pp; }
+
+    public ArrayList<String> getLanguages() { return this.languages; }
+
+    public ArrayList<String> getToolProfs() { return this.toolProfs; }
+
+    public String getPersonality() { return this.personality; }
+
+    public String getIdeals() { return this.ideals; }
+
+    public String getBonds() { return this.bonds; }
+
+    public String getFlaws() { return this.flaws; }
 }
